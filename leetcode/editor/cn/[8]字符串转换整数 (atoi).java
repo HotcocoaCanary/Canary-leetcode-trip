@@ -143,6 +143,8 @@ public int myAtoi(String s) {
     // 转换数字
     long res = 0;
     while (i < s.length() && Character.isDigit(s.charAt(i))) {
+        //例如：字符 '5' 的 ASCII 码是 53，字符 '0' 的 ASCII 码是 48
+        //所以 '5' - '0' = 53 - 48 = 5
         res = res * 10 + (s.charAt(i) - '0');
         
         // 检查是否超出32位整数范围
